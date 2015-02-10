@@ -41,7 +41,7 @@ if __name__ == "__main__":
 
     if len(sys.argv) != 4:
         sys.exit("\nUsage: $ python calculadora.py" +
-                " funcion operando1 operando2")
+                 " funcion operando1 operando2")
 
     funcion = sys.argv[1]
     operando1 = int(sys.argv[2])
@@ -56,5 +56,5 @@ if __name__ == "__main__":
         resultado = division(operando1, operando2)
     else:
         sys.exit("\nLas operaciones validas son:" +
-                " sumar, restar, multiplicar y dividir")
+                 " sumar, restar, multiplicar y dividir")
     print "\nEl resultado es " + str(resultado)

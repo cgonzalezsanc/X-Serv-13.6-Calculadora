@@ -34,7 +34,10 @@ def multi(factor1, factor2):
 def division(dividendo, divisor):
     """Division de dos reales"""
 
-    return dividendo / divisor
+    try:
+        return dividendo / divisor
+    except ZeroDivisionError:
+        sys.exit("\nERROR: Dividido por zero");
 
 
 if __name__ == "__main__":
@@ -44,8 +47,12 @@ if __name__ == "__main__":
                  " funcion operando1 operando2")
 
     funcion = sys.argv[1]
-    operando1 = float(sys.argv[2])
-    operando2 = float(sys.argv[3])
+    try:
+        operando1 = float(sys.argv[2])
+        operando2 = float(sys.argv[3])
+    except ValueError:
+        sys.exit("\nERROR: Algún número es incorrecto");
+    
     if funcion == "sumar":
         resultado = suma(operando1,	operando2)
     elif funcion == "restar":

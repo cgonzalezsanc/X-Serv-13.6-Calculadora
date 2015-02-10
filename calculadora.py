@@ -14,25 +14,25 @@ import os
 
 
 def suma(sumando1, sumando2):
-    """Suma de dos enteros/reales"""
+    """Suma de dos reales"""
 
     return sumando1 + sumando2
 
 
 def resta(minuendo, sustraendo):
-    """Resta de dos enteros/reales"""
+    """Resta de dos reales"""
 
     return minuendo - sustraendo
 
 
 def multi(factor1, factor2):
-    """Multiplicacion de dos enteros/reales"""
+    """Multiplicacion de dos reales"""
 
     return factor1 * factor2
 
 
 def division(dividendo, divisor):
-    """Division de dos enteros/reales"""
+    """Division de dos reales"""
 
     return dividendo / divisor
 
@@ -44,8 +44,8 @@ if __name__ == "__main__":
                  " funcion operando1 operando2")
 
     funcion = sys.argv[1]
-    operando1 = int(sys.argv[2])
-    operando2 = int(sys.argv[3])
+    operando1 = float(sys.argv[2])
+    operando2 = float(sys.argv[3])
     if funcion == "sumar":
         resultado = suma(operando1,	operando2)
     elif funcion == "restar":
